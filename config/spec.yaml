@@ -1,0 +1,17 @@
+base:
+  # data_dir: "/mnt/traffic/maruokai/datasets/pd_data"
+  data_dir: "/mnt/DataCenter/maruokai/datasets/pd"
+  csv_dir: "/home/maruokai/workplace/pd/subject_detection/user_data_split"
+  subject: 50
+  check:
+    Immediately before Parkinson medication: True
+    I don't take Parkinson medications: False
+    Another time: False
+    Just after Parkinson medication (at your best): True
+train:
+  use_weight_sampler: False
+  lr: 1e-3
+  batch_size: 128
+  epoch: 100
+  gpu: 1
+  
